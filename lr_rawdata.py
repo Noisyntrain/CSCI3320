@@ -8,6 +8,8 @@ seaborn.set()
 df = pd.read_csv('imports-85.data',
             header=None,
             names=['''Give exact names to columns according to imports-85.names'''],
-                na_values=('''Some values are missing, treat the '?' with NaN'''))
+            na_values=('''Some values are missing, treat the '?' with NaN'''))
 
 
+df_name = pd.read_csv('imports-85.name')
+print (df_name)
